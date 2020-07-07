@@ -3,4 +3,7 @@ Write-Host $usedVariable
 
 $unusedVariable = 123
 
-Get-Process
+$anadditonalunusedvar = Get-Process
+
+gci env:
+
