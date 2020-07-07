@@ -1,9 +1,8 @@
 $usedVariable = "This is a string"
-Write-Host $usedVariable
+if ([string]::IsNullOrWhiteSpace($usedVariable)) {
+    Get-ChildItem env:
+} elseif ($IsLinux) {
+    Get-ChildItem env:
+}
 
-$unusedVariable = 123
-
-$anadditonalunusedvar = Get-Process
-
-gci env:
 
